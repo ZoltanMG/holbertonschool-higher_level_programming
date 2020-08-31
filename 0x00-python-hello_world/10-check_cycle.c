@@ -15,7 +15,7 @@ int check_cycle(listint_t *list)
 	tortuga = list->next;
 	liebre = list->next->next;
 
-	while (liebre != NULL && tortuga != NULL)
+	while (liebre != NULL && tortuga != NULL && liebre->next != NULL)
 	{
 		if (tortuga == liebre)
 			return (1);
