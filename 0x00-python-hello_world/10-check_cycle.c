@@ -12,7 +12,7 @@ int check_cycle(listint_t *list)
 
 	if (list == NULL || list->next == NULL)
 		return (0);
-	tortuga = list;
+	tortuga = list->next;
 	liebre = list->next->next;
 
 	while (liebre != NULL && tortuga != NULL)
