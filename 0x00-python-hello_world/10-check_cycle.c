@@ -10,12 +10,12 @@ int check_cycle(listint_t *list)
 	listint_t *tortuga = NULL;
 	listint_t *liebre = NULL;
 
-	if (!list)
+	if (list == NULL || list->next == NULL)
 		return (0);
 	tortuga = list;
 	liebre = list->next->next;
 
-	while (liebre)
+	while (liebre != NULL && tortuga != NULL)
 	{
 		if (tortuga == liebre)
 			return (1);
