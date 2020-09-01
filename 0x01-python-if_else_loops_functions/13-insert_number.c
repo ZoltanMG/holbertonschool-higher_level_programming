@@ -1,5 +1,12 @@
 #include "lists.h"
 
+/**
+ * insert_node - insert one node in a linked list.
+ * @head: doble pointer to linked list.
+ * @number: integer to add in linked list.
+ *
+ * Return: node with new node.
+ */
 listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *new;
@@ -25,7 +32,7 @@ listint_t *insert_node(listint_t **head, int number)
 			{
 				*head = new;
 				new->next = current;
-				return(new);
+				return (new);
 			}
 			else if (current->next->n <= number)
 				current = current->next;
@@ -35,7 +42,7 @@ listint_t *insert_node(listint_t **head, int number)
 				current = current->next;
 				new->next = current;
 				aux->next = new;
-				return(new);
+				return (new);
 			}
 		}
 		current->next = new;
