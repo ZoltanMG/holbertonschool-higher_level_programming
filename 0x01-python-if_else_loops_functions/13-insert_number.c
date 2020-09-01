@@ -32,6 +32,7 @@ listint_t *insert_node(listint_t **head, int number)
 				return(new);
 			}
 		}
+		current->next = new;
 	}
 	return (new);
 }
