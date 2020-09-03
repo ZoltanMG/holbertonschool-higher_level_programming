@@ -2,6 +2,7 @@
 #Python - import & modules
 ## Objectives
 
+
 - Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))
 - How to import functions from another file
 - How to use imported functions
