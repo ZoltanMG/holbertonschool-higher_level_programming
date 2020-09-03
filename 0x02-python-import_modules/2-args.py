@@ -7,7 +7,7 @@ if __name__ == '__main__':
     elif len(sys.argv) == 2:
         print('1 argument:\n1: {}'.format(sys.argv[1]))
     else:
-        print('{} arguments:'.format(len(sys.argv) -1))
+        print('{} arguments:'.format(len(sys.argv) - 1))
         for count, arg in enumerate(sys.argv):
             if count != 0:
                 print('{}: {}'.format(count, arg))
