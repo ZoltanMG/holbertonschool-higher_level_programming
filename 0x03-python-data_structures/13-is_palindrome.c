@@ -20,9 +20,6 @@ int is_palindrome(listint_t **head)
 		h = h->next;
 	}
 
-	if (count % 2 == 0 || count == 2)
-		return (0);
-
 	h = *head;
 	while (count_2 < count)
 	{
