@@ -32,12 +32,12 @@ int is_palindrome(listint_t **head)
 			count_3++;
 		}
 		if (aux->n != h->n)
-			return (0);
+			break;
 		count--;
 		count_2++;
 		count_3 = 0;
 		aux = *head;
 		h = h->next;
 	}
-	return (1);
+	return (0);
 }
