@@ -18,12 +18,10 @@ int is_palindrome(listint_t **head)
 	while (h)
 	{
 		buffer[count_1] = h->n;
-		h = h->next;
 		count_1++;
+		h = h->next;
 	}
 
-	if (count_1 == 1)
-		return (0);
 	count_1--;
 	while (count_2 < count_1)
 	{
