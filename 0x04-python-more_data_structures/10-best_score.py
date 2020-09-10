@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    score = 0
+    score = -100000000
     name = ''
 
     if a_dictionary is None:
