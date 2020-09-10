@@ -7,7 +7,8 @@ def best_score(a_dictionary):
         return None
 
     for i, j in a_dictionary.items():
-        if j > score:
-            name = i
-            score = j
+        if j:
+            if j > score:
+                name = i
+                score = j
     return name
