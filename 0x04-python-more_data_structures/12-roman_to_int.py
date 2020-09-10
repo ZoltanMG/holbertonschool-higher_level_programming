@@ -9,12 +9,12 @@ def roman_to_int(roman_string):
     for i in range(len(roman_string)):
         if i == 0:
             num_roman += numbers[roman_string[i]]
-        elif roman_string[i - 1] == 'I' and roman_string[i] != 'I':
+        elif numbers[roman_string[i]] > numbers[roman_string[i - 1]]:
             if i == 1:
-                num_roman -= 2
+                num_roman -= numbers[roman_string[i - 1]] * 2
                 num_roman += numbers[roman_string[i]]
             else:
-                num_roman -= 1
+                num_roman -= numbers[roman_string[i]]
                 num_roman += numbers[roman_string[i]]
         else:
             num_roman += numbers[roman_string[i]]
