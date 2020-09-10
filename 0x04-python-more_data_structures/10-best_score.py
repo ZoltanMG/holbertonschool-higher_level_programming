@@ -1,13 +1,10 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    score = -100000000
     name = ''
 
     if a_dictionary is None:
         return None
 
-    for i, j in a_dictionary.items():
-        if j > score:
-            name = i
-            score = j
+    for i, j in sorted(a_dictionary.items()):
+        name = i
     return name
