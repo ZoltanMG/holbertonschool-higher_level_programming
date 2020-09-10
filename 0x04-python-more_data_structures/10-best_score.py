@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    score = 0
+    score = -1000
 
     if a_dictionary:
         for i, j in a_dictionary.items():
