@@ -1,11 +1,4 @@
 #!/usr/bin/pyhon3
 def search_replace(my_list, search, replace):
-    new_list = []
-
-    if my_list:
-        for i in my_list:
-            if i != search:
-                new_list.append(i)
-            else:
-                new_list.append(replace)
+    new_list = list(map(lambda x : x if (x != search) else replace, my_list))
     return new_list
