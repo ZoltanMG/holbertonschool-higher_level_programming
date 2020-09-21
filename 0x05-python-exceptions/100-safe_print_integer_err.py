@@ -9,7 +9,7 @@ def safe_print_integer_err(value):
         sys.stderr.write("Exception: {}\n".format(v_err))
         return False
     except TypeError as t_err:
-        sys.stderr.write("Exception: {}\n".format(T_err))
+        sys.stderr.write("Exception: {}\n".format(t_err))
         return False
 
     return True
