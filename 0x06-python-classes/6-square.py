@@ -18,8 +18,8 @@ class Square:
             else:
                 raise TypeError('size must be an integer')
 
-            if type(position) == tuple and len(position) == 2 and
-            type(position[0]) == int and type(position[1] == int) and
+            if type(position) == tuple and len(position) == 2 and\
+            type(position[0]) == int and type(position[1] == int) and\
             position[0] >= 0 and position[1] >= 0:
                 self.__position = position
             else:
@@ -43,8 +43,8 @@ class Square:
         """ returns changed value of __position"""
 
         try:
-            if type(position) == tuple and len(position) == 2 and
-            type(position[0]) == int and type(position[1] == int) and
+            if type(position) == tuple and len(position) == 2 and\
+            type(position[0]) == int and type(position[1] == int) and\
             position[0] >= 0 and position[1] >= 0:
                 self.__position = position
             else:
@@ -81,5 +81,6 @@ class Square:
         else:
             print('{}'.format('\n' * self.position[1]), end='')
             for i in range(self.__size):
-                print('{}'.format(' ' * self.__position[0]), end='')
+                if self.__position[1] == 0:
+                    print('{}'.format(' ' * self.__position[0]), end='')
                 print('{}'.format('#' * self.__size))
