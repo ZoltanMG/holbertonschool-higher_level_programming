@@ -1,0 +1,53 @@
+#!/usr/bin/python3
+Square = __import__('6-square').Square
+
+def checker(size=0, coord=(0,0)):
+    try:
+        my_square_3 = Square(size, coord)
+        my_square_3.my_print()
+    except Exception as e:
+        print(e)
+
+checker(3)
+print("--")
+checker(3,(1,1))
+print("--")
+checker(3,(3,0))
+print("--")
+print("errors(sizes)")
+checker([],(3,0))
+checker(1.0,(3,0))
+checker({},(3,0))
+checker("hello",(3,0))
+checker(True,(3,0))
+checker(None,(3,0))
+checker(-1,(3,0))
+checker(2,())
+checker(2,{})
+checker(2,[1,3])
+checker(2,True)
+checker(2,1.3)
+checker(2,(1))
+checker(2,(1,2,3))
+checker(2,(-1,-1))
+checker(2,(-1,-1))
+checker(2,([],1))
+checker(2,(1,[]))
+quit()
+checker(2,(-1,[]))
+checker(2,(1))
+checker(2,(1, 1, 1))
+checker(2,(1, 1, 1))
+checker(2,(1, 1, 1))
+checker()
+my_square_3 = Square(2,(1,1))
+my_square_3.size = 1
+my_square_3.my_print()
+quit()
+my_square_3 = Square(2,(1,1))
+my_square_3.size = 10
+my_square_3.my_print()
+my_square_3.position = (100,1)
+my_square_3.position = (2,0)
+my_square_3.my_print()
+quit()
