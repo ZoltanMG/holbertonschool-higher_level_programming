@@ -45,7 +45,6 @@ class Square:
         except (TypeError, ValueError):
             raise
 
-
     def my_print(self):
         """ prints a squad with # character """
 
