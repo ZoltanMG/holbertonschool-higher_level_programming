@@ -19,8 +19,8 @@ class Square:
                 raise TypeError('size must be an integer')
 
             if type(position) == tuple and len(position) == 2 and
-type(position[0]) == int and type(position[1] == int) and
-position[0] >= 0 and position[1] >= 0:
+            type(position[0]) == int and type(position[1] == int) and
+            position[0] >= 0 and position[1] >= 0:
                 self.__position = position
             else:
                 raise TypeError(err)
@@ -44,8 +44,8 @@ position[0] >= 0 and position[1] >= 0:
 
         try:
             if type(position) == tuple and len(position) == 2 and
-type(position[0]) == int and type(position[1] == int) and
-position[0] >= 0 and position[1] >= 0:
+            type(position[0]) == int and type(position[1] == int) and
+            position[0] >= 0 and position[1] >= 0:
                 self.__position = position
             else:
                 raise TypeError(err)
