@@ -21,8 +21,6 @@ class Rectangle:
         self.__width = width
         self.__height = height
         Rectangle.number_of_instances += 1
-        # como prueba no encapsulé las variables en el init
-        # pero si en los setters and getters
 
     @property
     def width(self):
