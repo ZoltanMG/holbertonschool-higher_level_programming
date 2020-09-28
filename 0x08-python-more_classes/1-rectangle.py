@@ -10,16 +10,23 @@ class Rectangle:
     in this class is declared
     the width and height attributes
     """
+
     def __init__(self, width=0, height=0):
+        """ inicializador"""
+
         self.__width = width
         self.__height = height
 
     @property
     def width(self):
+        """ retorna el ancho """
+
         return self.__width
 
     @width.setter
     def width(self, value):
+        """ actualiza el ancho """
+
         if type(value) is not int:
             raise TypeError('width must be an integer')
         if value < 0:
@@ -28,10 +35,14 @@ class Rectangle:
 
     @property
     def height(self):
+        """ retorna el alto """
+
         return self.__height
 
     @height.setter
     def height(self, value):
+        """ cambia el alto """
+
         if type(value) is not int:
             raise TypeError('height must be an integer')
         if value < 0:
