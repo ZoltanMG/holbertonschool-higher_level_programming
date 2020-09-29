@@ -3,7 +3,7 @@
 
 
 class Rectangle:
-     """ clase de un rectangulo """
+    """ clase de un rectangulo """
 
     number_of_instances = 0
 

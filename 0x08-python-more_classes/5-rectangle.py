@@ -3,8 +3,6 @@
 
 
 class Rectangle:
-     """ clase de un rectangulo """
-
     def __init__(self, width=0, height=0):
         """ inicializa los valores de width y height """
 
@@ -19,8 +17,6 @@ class Rectangle:
 
         self.__width = width
         self.__height = height
-        # como prueba no encapsulé las variables en el init
-        # pero si en los setters and getters
 
     @property
     def width(self):
