@@ -43,7 +43,10 @@ class Base:
     def from_json_string(json_string):
         """ from_json_string """
 
-        return json.loads(json_string)
+        if json_string is not None:
+            return json.loads(json_string)
+        else:
+            return []
 
     @classmethod
     def create(cls, **dictionary):
