@@ -11,7 +11,7 @@ if __name__ == "__main__":
     cur = db.cursor()
     cur.execute("""SELECT cities.id, cities.name, states.name FROM cities
     JOIN states ON cities.state_id = states.id
-    WHERE states.name = %s""", (arguments[4], ))
+    WHERE states.name = %s""", (argv[4], ))
     rows = cur.fetchall()
     cities = []
     for row in rows:
